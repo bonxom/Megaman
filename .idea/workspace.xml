@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a79e840-732f-4482-90c1-bc8c43e0ac75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Megaman2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/effect/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/effect/CacheDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/effect/FrameImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/GameWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/Megaman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/ParticularObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/PhysicalMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/GameFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/InputManager.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2mhDG8TpjgjYipoPxgVbJIDrlU4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GameFrame.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Rác 2/rockman-master",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="gameobjects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameFrame">
+    <configuration name="GameFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userinterface.GameFrame" />
+      <module name="Megaman2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.gamestudio.userinterface.GameFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gamestudio.userinterface.GameFrame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gamestudio.userinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameFrame" />
+        <item itemvalue="Application.com.gamestudio.userinterface.GameFrame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a79e840-732f-4482-90c1-bc8c43e0ac75" name="Changes" comment="" />
+      <created>1727519815712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727519815712</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/AppData/Local/Programs/Eclipse Adoptium/jdk-17.0.10.7-hotspot/lib/src.zip!/java.desktop/javax/swing/JComponent.java</url>
+          <line>806</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
