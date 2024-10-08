@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a79e840-732f-4482-90c1-bc8c43e0ac75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Megaman2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/effect/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/effect/CacheDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/effect/FrameImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/GameWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/Megaman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/ParticularObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gameobjects/PhysicalMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/userinterface/InputManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gameobjects/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/GameWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/GameWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/Megaman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/Megaman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/ParticularObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/ParticularObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/PhysicalMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/PhysicalMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +43,7 @@
     "Application.GameFrame.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Rác 2/rockman-master",
     "run.code.analysis.last.selected.profile": "pProject Default",

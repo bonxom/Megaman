@@ -229,13 +229,10 @@ public class Megaman extends Human {
         }
         */
 
-        g2.setColor(Color.RED);
-        g2.fillRect((int)(getPosX() - getWidth()/2), (int)(getPosY() - getHeight()/2), (int)getWidth(), (int)getHeight());
-        g2.setColor(Color.BLACK);
-        g2.fillRect((int)getPosX(), (int)getPosY(), 2, 2);
 
+        anim.draw(g2, (int)(getPosX()) - (int)getGameWorld().getCamera().getPosX(),
+                (int)(getPosY()) - (int)getGameWorld().getCamera().getPosY());
 
-        anim.draw(g2, (int)(getPosX()), (int)(getPosY()));
         drawBoundForCollisionWithMap(g2);
         drawBoundForCollisionWithEnemy(g2);
 

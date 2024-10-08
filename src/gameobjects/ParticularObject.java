@@ -195,13 +195,15 @@ public abstract class ParticularObject extends GameObject {
     public void drawBoundForCollisionWithMap(Graphics2D g2) {
         Rectangle rect = getBoundForCollisionWithMap();
         g2.setColor(Color.BLUE);
-        g2.drawRect(rect.x, rect.y, rect.width, rect.height);
+        g2.drawRect(rect.x - (int)getGameWorld().getCamera().getPosX(),
+                rect.y - (int)getGameWorld().getCamera().getPosY(), rect.width, rect.height);
     }
 
     public void drawBoundForCollisionWithEnemy(Graphics2D g2) {
         Rectangle rect = getBoundForCollisionWithEnemy();
         g2.setColor(Color.GREEN);
-        g2.drawRect(rect.x, rect.y, rect.width, rect.height);
+        g2.drawRect(rect.x - (int)getGameWorld().getCamera().getPosX(),
+                rect.y - (int)getGameWorld().getCamera().getPosY(), rect.width, rect.height);
     }
 
     public abstract void attack();
