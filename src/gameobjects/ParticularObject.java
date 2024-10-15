@@ -147,7 +147,7 @@ public abstract class ParticularObject extends GameObject {
     public Rectangle getBoundForCollisionWithMap() {
         Rectangle bound = new Rectangle();
         bound.x = (int) (getPosX() - width / 2);
-        bound.y = (int) (getPosX() - height / 2);
+        bound.y = (int) (getPosY() - height / 2);
         bound.width = (int) width;
         bound.height = (int) height;
         return bound;
@@ -171,7 +171,7 @@ public abstract class ParticularObject extends GameObject {
                     startImmunity = System.nanoTime();
                     if (getBlood() == 0) state = FEY;
                 } else {
-                    behurtAfterAnim.Update(System.nanoTime());
+                    behurtBeforeAnim.Update(System.nanoTime());
                     if (behurtBeforeAnim.isLastFrame()) {
                         behurtBeforeAnim.reset();
                         state = IMMUNITY;
@@ -204,6 +204,14 @@ public abstract class ParticularObject extends GameObject {
         g2.setColor(Color.GREEN);
         g2.drawRect(rect.x - (int)getGameWorld().getCamera().getPosX(),
                 rect.y - (int)getGameWorld().getCamera().getPosY(), rect.width, rect.height);
+    }
+
+    public boolean isObjectOutOfCameraView(){
+        if (getPosX() - getGameWorld().getCamera().getPosX() > getGameWorld().getCamera().getWidthView() ||
+            getPosX() - getGameWorld().getCamera().getPosX() < -50 ||
+            getPosY() - getGameWorld().getCamera().getPosY() > getGameWorld().getCamera().getHeightView() ||
+            getPosY() - getGameWorld().getCamera().getPosY() < -50) return true;
+        return false;
     }
 
     public abstract void attack();

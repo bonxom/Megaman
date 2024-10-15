@@ -1,8 +1,11 @@
-package gameobjects;
+package gameobjects.gamecharacters;
+
+import gameobjects.GameWorld;
+import gameobjects.ParticularObject;
 
 import java.awt.*;
 
-public abstract class Human extends ParticularObject{
+public abstract class Human extends ParticularObject {
     private boolean isJumping;
     private boolean isDicking; //dang ngoi
     private boolean isLanding;
@@ -46,21 +49,16 @@ public abstract class Human extends ParticularObject{
     public void Update(){
         super.Update();
         if (getState() == ALIVE || getState() == IMMUNITY){
-            System.out.println(isLanding);
             if (!isLanding){
                 setPosX(getPosX() + getSpeedX());
-                if (getDirection() == LEFT_DIR) System.out.println("PRESS A");
-                else if (getDirection() == RIGHT_DIR) System.out.println("PRESS D");
                 if (getDirection() == LEFT_DIR &&
                         getGameWorld().getPhysicalMap().haveCollisionWithLeftWall(getBoundForCollisionWithMap()) != null){
-                    System.out.println("Press A");
                     Rectangle rectLeft = getGameWorld().getPhysicalMap().haveCollisionWithLeftWall(getBoundForCollisionWithMap());
                     setPosX(rectLeft.x + rectLeft.width + getWidth()/2);
                 }
 
                 if (getDirection() == RIGHT_DIR &&
                         getGameWorld().getPhysicalMap().haveCollisionWithRightWall(getBoundForCollisionWithMap()) != null){
-                    System.out.println("Press D");
                     Rectangle rectRight = getGameWorld().getPhysicalMap().haveCollisionWithRightWall(getBoundForCollisionWithMap());
                     setPosX(rectRight.x - getWidth()/2);
                 }
@@ -68,7 +66,7 @@ public abstract class Human extends ParticularObject{
 
                 Rectangle boundForCollisionWithMapFuture = getBoundForCollisionWithMap();
                 if (getSpeedY() != 0){
-                    boundForCollisionWithMapFuture.y += getSpeedY();
+                    boundForCollisionWithMapFuture.y += (int)getSpeedY();
                 }
                 else{
                     boundForCollisionWithMapFuture.y += 2;

@@ -9,14 +9,14 @@ import java.util.ArrayList;
 public class Animation {
     private String name;
     private boolean isRepeated;
-    private ArrayList<FrameImage> frameImages; //image for an annimation scene
+    private ArrayList<FrameImage> frameImages; //image for an animation scene
     private int currentFrame;//idx for given list
 
-    private ArrayList<Boolean>  ignoreFrames; //skip annimation if it is not necessary
+    private ArrayList<Boolean>  ignoreFrames; //skip animation if it is not necessary
     private ArrayList<Double> delayFrames; //delay time between 2 frames
 
     private long begintime;
-    private boolean drawRectFrame; //draw rectange around image, just for keeping track of the image we used
+    private boolean drawRectFrame; //draw rectangle around image, just for keeping track of the image we used
 
     public Animation(){
         delayFrames = new ArrayList<>();
@@ -28,9 +28,6 @@ public class Animation {
         isRepeated = true;
     }
 
-    public <T> ArrayList<T> clone(ArrayList<T> v) {
-        return new ArrayList<>(v);
-    }
 
     public Animation(Animation animation){//copy constructor
         begintime = animation.begintime;
@@ -38,9 +35,20 @@ public class Animation {
         drawRectFrame = animation.drawRectFrame;
         isRepeated = animation.isRepeated;
 
-        delayFrames = clone(animation.delayFrames);
-        ignoreFrames = clone(animation.ignoreFrames);
-        frameImages = clone(animation.frameImages);
+        delayFrames = new ArrayList<Double>();
+        for(Double d : animation.delayFrames){
+            delayFrames.add(d);
+        }
+
+        ignoreFrames = new ArrayList<Boolean>();
+        for(boolean b : animation.ignoreFrames){
+            ignoreFrames.add(b);
+        }
+
+        frameImages = new ArrayList<FrameImage>();
+        for(FrameImage f : animation.frameImages){
+            frameImages.add(new FrameImage(f));
+        }
     }
 
     //getter setter here

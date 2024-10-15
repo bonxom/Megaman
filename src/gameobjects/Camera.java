@@ -1,5 +1,7 @@
 package gameobjects;
 
+import gameobjects.gamecharacters.Megaman;
+
 public class Camera extends GameObject{
     private float widthView;
     private float heightView;

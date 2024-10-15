@@ -1,10 +1,13 @@
-package gameobjects;
+package gameobjects.map;
 
 import effect.CacheDataLoader;
+import gameobjects.Camera;
+import gameobjects.GameObject;
+import gameobjects.GameWorld;
 
 import java.awt.*;
 
-public class PhysicalMap extends GameObject{
+public class PhysicalMap extends GameObject {
     public int[][] phys_map;
     private int tileSize;
 

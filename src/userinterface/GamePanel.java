@@ -1,19 +1,11 @@
 package userinterface;
 
-import effect.Animation;
-import effect.CacheDataLoader;
-import effect.FrameImage;
 import gameobjects.GameWorld;
-import gameobjects.Megaman;
-import gameobjects.PhysicalMap;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 
@@ -22,7 +14,6 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
     private boolean isRunning;
     private InputManager inputManager;
 
-    private BufferedImage bufferedImage;
     private Graphics2D bufG2D;
 
     private GameWorld gameWorld;
@@ -32,7 +23,6 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 
         gameWorld = new GameWorld();
         inputManager = new InputManager(gameWorld);
-        bufferedImage = new BufferedImage(GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
 
     }
 
@@ -43,7 +33,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        g.drawImage(bufferedImage, 0, 0, this);
+        g.drawImage(gameWorld.getBufferedImage(), 0, 0, this);
     }
 
     public void UpdateGame(){
@@ -51,21 +41,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
     }
 
     public void RenderGame(){
-        if (bufferedImage == null){
-            bufferedImage = new BufferedImage(GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        }
-
-        if (bufferedImage != null){
-            bufG2D = (Graphics2D) bufferedImage.getGraphics();
-        }
-
-        if (bufG2D != null){
-            bufG2D.setColor(Color.WHITE);
-            bufG2D.fillRect(0, 0, GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT);
-
-            gameWorld.Render(bufG2D);
-        }
-
+        gameWorld.Render();
     }
 
     public void startGame(){
@@ -78,7 +54,6 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 
     @Override
     public void run() {
-        System.out.println("HELLO");
         long FPS = 80;
         long period = 1000000000 / FPS;
 
@@ -107,15 +82,12 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        System.out.println("Press");
-
         inputManager.processKeyPressed(e.getKeyCode());
 
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        System.out.println("Release");
         inputManager.processKeyReleased(e.getKeyCode());
     }
 
